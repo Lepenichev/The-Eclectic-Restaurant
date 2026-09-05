@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../assets/img/page-bckg.png) no-repeat center;
+    background-size: cover;
+    font-family: var(--pts);
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: var(--bn);
+    font-size: 96px;
+    line-height: 100%;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+header {
+    background-image: url(../assets/img/home-bckg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1274px;
+    margin: 0 auto;
+}
+
+button {
+    transition: background 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+@media (max-width: 1920px) {
+    .container {
+        margin: 0 17vw;
+    }
+}

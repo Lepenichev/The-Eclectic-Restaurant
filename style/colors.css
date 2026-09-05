@@ -1,0 +1,11 @@
+:root {
+    --nav-bckg: #000000dd;
+    --blur-bckg: #00000099;
+    --text: #ffffff;
+    --content: #000000;
+    --footer: #121212;
+    --text-inactive: #9e9e9e;
+    --button: #e76020;
+    --button-active: #ff7737;
+    --mobile-arrow-bckg: #7f7f7f7f;
+}
