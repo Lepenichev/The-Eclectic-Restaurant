@@ -22,7 +22,7 @@
                     <label for="menu-hamburger"></label>
                     <ul class="navigation__list">
                         <li class="navigation__list-item">
-                            <a href="">Главная</a>
+                            <a href="javascript:void(0)">Главная</a>
                         </li>
                         <li class="navigation__list-item">
                             <a href="">Меню</a>
@@ -34,10 +34,113 @@
                 </div>
             </div>
         </nav>
+        
         <section class="intro">
             <h1 class="intro__header">Ресторан <span>«Эклектика»</span></h1>
-            <button class="intro__button">Забронировать онлайн</button>
+            <button class="intro__button btn-big">Забронировать онлайн</button>
+            <button class="intro__button-stock btn-big">Акция</button>
         </section>
     </header>
+
+    <main>
+        <section class="gallery">
+            <div class="gallery__items">
+                <figure class="gallery__item">
+                    <img class="gallery__image" src="assets/gallery/gallery_about.png" alt="Зал ресторана">
+                    <figcaption class="gallery__text">
+                        <h2 class="gallery__header">О нас</h2>
+                        <p class="gallery__paragraph">Ресторан «Эклектика» — это место, где сочетаются утонченный 
+                            вкус и теплая атмосфера. Наши шеф-повара тщательно 
+                            подбирают ингредиенты и создают блюда с любовью 
+                            к каждому клиенту. 
+                        </p>
+                        <p class="gallery__paragraph">
+                            «Эклектика» предлагает уютные залы для семейных ужинов, 
+                            романтических свиданий и деловых обедов. Мы ценим ваше 
+                            время и комфорт, поэтому обеспечиваем высокий уровень 
+                            сервиса.
+                        </p>
+                        <p class="gallery__paragraph">
+                            Добро пожаловать в мир великолепных вкусов 
+                            и неповторимых воспоминаний.
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="gallery__management">
+                <button class="gallery__button gallery__button--prev">
+                    <img src="assets/svg/left-arrow.svg" alt="Стрелка влево">
+                </button>
+                <button class="gallery__button gallery__button--next">
+                    <img src="assets/svg/right-arrow.svg" alt="Стрелка вправо">
+                </button>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="reviews__container">
+                <h2 class="reviews__header">Отзывы</h2>
+                <div class="reviews__items">
+                    <figure class="reviews__item">
+                        <img class="reviews__image" 
+                             src="assets/reviews/reviewNatalya.png" 
+                             alt="Фотография довольного поситителя">
+                        <figcaption class="reviews__content">
+                            <div class="reviews__content-up">
+                                <h3 class="reviews__user-name">Наталья Иванова</h3>
+                                <div class="reviews__stars">
+                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
+                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
+                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
+                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
+                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
+                                </div>
+                            </div>
+                            <p class="reviews__text">
+                                Посетили семейный ресторан вместе с мужем и детьми — 
+                                отличное место для семейного ужина! Обстановка очень 
+                                уютная, а обслуживание выше всяких похвал. Наши дети 
+                                в восторге от детского меню, которое оказалось не только 
+                                вкусным, но и заботливо подготовленным с учетом 
+                                детских предпочтений. Будем рекомендовать всем 
+                                друзьям и обязательно вернемся.
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="reviews__item">
+                        <img class="reviews__image" 
+                             src="assets/reviews/reviewAleksandr.png" 
+                             alt="Фотография довольного поситителя">
+                        <figcaption class="reviews__content">
+                            <div class="reviews__content-up">
+                                <h3 class="reviews__user-name">Александр Петров</h3>
+                                <div class="reviews__stars">
+                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
+                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
+                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
+                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
+                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
+                                </div>
+                            </div>
+                            <p class="reviews__text">
+                                Этот ресторан — настоящая находка! Проводил здесь 
+                                деловой ужин с партнерами, и все остались в восторге. 
+                                Обслуживание на высшем уровне, персонал внимателен 
+                                к каждой детали. Кухня порадовала своим 
+                                разнообразием. Отличное место для деловых встреч и 
+                                ужинов в уютной обстановке. Рекомендую!
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <button class="reviews__button reviews__button--prev">
+                    <img src="" alt="Стрелка влево">
+                </button>
+                <button class="reviews__button reviews__button--next">
+                    <img src="" alt="Стрелка вправо">
+                </button>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
