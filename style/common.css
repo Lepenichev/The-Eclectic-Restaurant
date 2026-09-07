@@ -18,6 +18,10 @@ p, h1, h2, h3, figure, figcaption {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     font-family: var(--bn);
     font-size: clamp(35px, 9vw, 96px);
@@ -52,8 +56,22 @@ header {
     font-size: clamp(18px, 4vw, 27px);
 }
 
+.btn-lg {
+    color: white;
+    background: transparent;
+    border: solid 2px white;
+    border-radius: 50px;
+    padding: 16px 48px;
+    transition: all 0.2s ease-in-out;
+}
+
 .btn-big:hover {
     background: var(--button-active);
+}
+
+.btn-lg:hover {
+    color: black;
+    background: white;
 }
 
 button {
