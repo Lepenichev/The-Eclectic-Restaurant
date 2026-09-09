@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../style/common.css">
     <link rel="stylesheet" href="../style/fonts.css">
     <link rel="stylesheet" href="../style/home.css">
+    <link rel="stylesheet" href="../style/contact.css">
 </head>
 <body>
     <header>
@@ -35,6 +36,57 @@
             </div>
         </nav>
     </header>
+
+    <main>
+        <section class="calendar">
+            <div class="calendar__close">❮</div>
+            <h2 class="calendar__header">Бронирование</h2>
+            <div class="calendar__month"></div>
+            <table class="calendar__day">
+                <thead  class="calendar__top">
+                    <tr>
+                        <th class="calendar__cail">Пн</th>
+                        <th class="calendar__cail">Вт</th>
+                        <th class="calendar__cail">Ср</th>
+                        <th class="calendar__cail">Чт</th>
+                        <th class="calendar__cail">Пт</th>
+                        <th class="calendar__cail">Сб</th>
+                        <th class="calendar__cail">Вс</th>
+                    </tr>
+                </thead>
+                <tbody class="calendar__body"></tbody>
+            </table>
+            <h3 class="calendar__subheader">Выберите время</h3>
+            <div class="calendar__time"></div>
+        </section>
+
+        <article class="booking">
+            <div class="booking__img"></div>
+            <div class="booking__right">
+                <h3 class="booking__header">
+                    Бронирование столикав ресторане «Эклектика»
+                </h3>
+                <p class="booking__text">
+                    Заполните форму ниже, чтобы зарезервировать столик у нас в ресторане. Мы будем ждать вас!
+                </p>
+                <form>
+                    <input class="booking__input" type="text" placeholder="Имя" name="name">
+                    <input class="booking__input" type="tel" placeholder="Телефон" name="phone">
+                    <input class="booking__input" type="email" placeholder="Почта" name="email">
+                    <fieldset class="booking__form-item">
+                        <button class="booking__button-quantity booking__button-quantity--minuses" type="button">-</button>
+                        <input class="booking__form-data" type="text" value="1" disabled>
+                        <button class="booking__button-quantity booking__button-quantity--plus" type="button">+</button>
+                    </fieldset>
+                    <fieldset class="booking__form-item">
+                        <input class="booking__form-data" type="text" placeholder="Дата и время" name="date">
+                    </fieldset>
+                    <input class="booking__input" type="text" placeholder="Пожелания" name="comments">
+                    <button class="booking__button" type="submit"> Забронировать</button>
+                </form>
+            </div>
+        </article>
+    </main>
 
     <footer class="footer">
         <span class="footer__logo">эклетика</span>

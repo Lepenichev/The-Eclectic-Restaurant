@@ -1,0 +1,138 @@
+/*calendar*/
+.calendar {
+    display: none;
+    position: absolute;
+    top: 120px;
+    right: 35vw;
+    width: 30vw;
+    background: white;
+    border: 1px solid darkgray;
+    padding: 10px 5px 20px 5px;
+}
+
+.calendar__close {
+    margin: 5px;
+    font-size: 1.3em;
+}
+
+.calendar__header {
+    margin: 10px 5px;
+}
+
+.calendar__cail {
+    font-family: var(--bn);
+}
+
+.calendar__day {
+    width: 100%;
+}
+
+.calendar__day td, .calendar__day th {
+    text-align: center;
+    padding: 5px;
+}
+
+.calendar__day td .selected {
+    background: #222B45;
+    color: white;
+    border-radius: calc(1em + 5px);
+}
+
+.calendar__day td .disabled {
+    color: lightgray;
+}
+
+.calendar__subheader {
+    margin: 5px 0;
+}
+
+.calendar__time, .calendar__month {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.calendar__time button, .calendar__month button {
+    width: 30%;
+    margin: 3px;
+    font-size: 1.1em;
+    font-weight: bolder;
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: #F1F3F8;
+    color: #8B9CB3;
+}
+
+.calendar__time button.occupied {
+    visibility: hidden;
+}
+
+.calendar__time button.selected {
+    background: #222B45;
+    color: white;
+}
+
+.calendar__month button.selected {
+    border: none;
+    border-radius: calc(0.55em + 1px);
+    background: #222B45;
+    color: white;
+}
+
+/*booking*/
+.booking {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.booking__img {
+    background: url(../assets/gallery/contact/contact.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.booking__right {
+    background: white;
+}
+
+.booking__header {
+
+}
+
+.booking__text {
+
+}
+
+.booking__input {
+    border: none;
+    display: block;
+    width: 21.4vw;
+    margin-bottom: 34px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    color: #B2B2B2;
+}
+
+.booking__form-item {
+    border: none;
+    display: inline-block;
+}
+
+.booking__button-quantity {
+
+}
+
+.booking__form-data {
+    
+}
+
+.booking__form-data:not(:last-child) {
+        width: 17px;
+}
+
+.booking__button {
+
+}
