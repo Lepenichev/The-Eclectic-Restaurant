@@ -45,13 +45,13 @@
             <table class="calendar__day">
                 <thead  class="calendar__top">
                     <tr>
-                        <th class="calendar__cail">Пн</th>
-                        <th class="calendar__cail">Вт</th>
-                        <th class="calendar__cail">Ср</th>
-                        <th class="calendar__cail">Чт</th>
-                        <th class="calendar__cail">Пт</th>
-                        <th class="calendar__cail">Сб</th>
-                        <th class="calendar__cail">Вс</th>
+                        <th class="calendar__cell">Пн</th>
+                        <th class="calendar__cell">Вт</th>
+                        <th class="calendar__cell">Ср</th>
+                        <th class="calendar__cell">Чт</th>
+                        <th class="calendar__cell">Пт</th>
+                        <th class="calendar__cell">Сб</th>
+                        <th class="calendar__cell">Вс</th>
                     </tr>
                 </thead>
                 <tbody class="calendar__body"></tbody>
@@ -77,13 +77,32 @@
                         <button class="booking__button-quantity booking__button-quantity--minuses" type="button">-</button>
                         <input class="booking__form-data" type="text" value="1" disabled>
                         <button class="booking__button-quantity booking__button-quantity--plus" type="button">+</button>
+                        Количество гостей
                     </fieldset>
                     <fieldset class="booking__form-item">
                         <input class="booking__form-data" type="text" placeholder="Дата и время" name="date">
                     </fieldset>
                     <input class="booking__input" type="text" placeholder="Пожелания" name="comments">
-                    <button class="booking__button" type="submit"> Забронировать</button>
+                    <button class="booking__button btn-big" type="submit"> Забронировать</button>
                 </form>
+            </div>
+        </article>
+
+        <article class="contacts contacts--reverse">
+            <img class="contacts__image" src="../assets/gallery/contact/map.png" alt="Повара на кухне">
+            <div class="contacts__right contacts__right--revers">
+                <div class="contacts__content contacts__content--reverse">
+                    <h2 class="contacts__header">Мы ценим, что вы выбрали наш ресторан и обещаем сделать ваш визит незабываемым!</h2>
+                    <span>Мы открыты:</span>
+                    <p>Пн-Чт с 18:00 до 23:00
+                        Пт с 17:00 до 23:00 <br>
+                        Сб-Вс с 12:00 до 23:00
+                    </p>
+                    <p>
+                        Москва, ул. Ленина, д.11
+                        <a class="contacts__anchor" href="tel:+79110000080">+7 (911) 000-00-80</a>
+                    </p>
+                </div>
             </div>
         </article>
     </main>

@@ -455,6 +455,10 @@
     background-color: white;
 }
 
+.contacts--reverse {
+    flex-direction: row-reverse;
+}
+
 .contacts__image {
     object-fit: cover;
     width: 50%;
@@ -465,6 +469,10 @@
     width: 50%;
 }
 
+.contacts__right--revers {
+    padding: 5.3vw 8.4vw 5.3vw 16.8vw;
+}
+
 .contacts__content {
     font-size: clamp(20px, 1.6vw, 22px);
     margin-bottom: 50px;
@@ -473,6 +481,18 @@
     display: flex;
     flex-direction: column;
     gap: 18px;
+}
+
+.contacts__content--reverse {
+    max-width: unset;
+}
+
+.contacts__content--reverse p {
+    max-width: 240px;
+}
+
+.contacts__header {
+    margin-bottom: 69px;
 }
 
 .contacts__content span {
