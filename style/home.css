@@ -6,6 +6,10 @@
     position: relative;
 }
 
+.navigation--black {
+    background: black;
+}
+
 .navigation__container {
     display: flex;
     justify-content: space-between;
@@ -150,10 +154,6 @@
     margin-bottom: 166px;
 }
 
-.gallery__items {
-
-}
-
 .gallery__item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -199,14 +199,6 @@
 
 .gallery__button:hover {
     opacity: 0.6;
-}
-
-.gallery__button--prev {
-
-}
-
-.gallery__button--next {
-
 }
 
 @media(max-width: 870px) {
@@ -302,10 +294,6 @@
     border-radius: 50%;
 }
 
-.reviews__content {
-
-}
-
 .reviews__content-up {
     display: flex;
     align-items: center;
@@ -314,24 +302,8 @@
     margin-bottom: 33px;
 }
 
-.reviews__user-name {
-
-}
-
-.reviews__stars {
-
-}
-
-.reviews__star {
-
-}
-
 .reviews__gray-star {
     display: none;
-}
-
-.reviews__text {
-
 }
 
 .reviews__button {

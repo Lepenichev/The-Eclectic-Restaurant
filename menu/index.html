@@ -1,1 +1,150 @@
-  
+  <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ресторан, кафе, где поесть, лучший ресторан, ужин в городе">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="Ресторан «Эклетика» — авторская кухня, уютная атмосфера и живая музыка в центре города. Бронируйте столик для ужина, свидания или банкета.">
+    <title>Ресторан «Эклетика» — авторская кухня и уют в центре города</title>
+    <link rel="canonical" href="https://eklektika-restoran.ru/">
+    <link rel="stylesheet" href="../style/colors.css">
+    <link rel="stylesheet" href="../style/common.css">
+    <link rel="stylesheet" href="../style/fonts.css">
+    <link rel="stylesheet" href="../style/home.css">
+    <link rel="stylesheet" href="../style/menu.css">
+</head>
+<body>
+    <header>
+        <nav class="navigation navigation--black">
+            <div class="navigation__container container">
+                <div class="navigation__logo">Эклетика</div>
+                <div class="navigation__menu">
+                    <input class="navigation__hamburger-button" type="checkbox" id="menu-hamburger">
+                    <label for="menu-hamburger"></label>
+                    <ul class="navigation__list">
+                        <li class="navigation__list-item">
+                            <a href="../index.html">Главная</a>
+                        </li>
+                        <li class="navigation__list-item">
+                            <a href="../menu/index.html">Меню</a>
+                        </li>
+                        <li class="navigation__list-item">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <template id="menuItemCard">
+        <figure class="menu__item">
+            <img class="menu__item-image" src="">
+            <div class="menu__item-bottom">
+                <figcaption class="menu__item-text">
+                    <p class="menu__item-title"></p>
+                    <p class="menu__item-price"></p>
+                </figcaption>
+                <p class="menu__item-price" data-details="" data-kcal="">Подробнее</p>
+            </div>
+        </figure>
+    </template>
+
+    <main>
+        <section class="menu">
+            <a class="menu__booking" href="../contact/index.html"></a>
+            <div class="menu__navigation" id="topMenu">
+                <a class="menu__anchor" href="#">Основные блюда</a>
+                <a class="menu__anchor" href="#">Закуски и салаты</a>
+                <a class="menu__anchor" href="#">Десерты</a>
+            </div>
+            <div class="menu__items">
+                <figure class="menu__item">
+                    <img class="menu__item-image" src="../assets/gallery/menu/d/17.png">
+                    <div class="menu__item-bottom">
+                        <figcaption class="menu__item-text">
+                            <p class="menu__item-title">Тыквенное наслаждение</p>
+                            <p class="menu__item-price">500₽</p>
+                        </figcaption>
+                        <button type="button" class="menu__item-button" data-details="Утонченный торт, гелато, эспрессо, пряные семечки и свежая земляника в гармонии в каждом кусочке." data-kcal="450">Подробнее</button>
+                    </div>
+                </figure>
+                <figure class="menu__item">
+                    <img class="menu__item-image" src="../assets/gallery/menu/d/16.png">
+                    <div class="menu__item-bottom">
+                        <figcaption class="menu__item-text">
+                            <p class="menu__item-title">Шоколадная симфония</p>
+                            <p class="menu__item-price">350₽</p>
+                        </figcaption>
+                        <button type="button" class="menu__item-button" data-details="Насладитесь роскошью шоколадного оливкового торта, смешанного с нежным лавандовым семифреддо, карамелизированным медом и взбитым кремом с оливковым маслом." data-kcal="550">Подробнее</button>
+                    </div>
+                </figure>
+                <figure class="menu__item">
+                    <img class="menu__item-image" src="../assets/gallery/menu/d/15.png">
+                    <div class="menu__item-bottom">
+                        <figcaption class="menu__item-text">
+                            <p class="menu__item-title">Тарт с кремом из кешью, карамельюи кумкватами</p>
+                            <p class="menu__item-price">500₽</p>
+                        </figcaption>
+                        <button type="button" class="menu__item-button" data-details="Роскошный тарт с кешью в карамельном масле, сопровождаемый свежестью цитрусового варенья, гелато с маслом из козьего молока и нежными маринованными кумкватами. В каждой порции - идеальное сочетание сладкого и освежающего." data-kcal="420">Подробнее</button>
+                    </div>
+                </figure>
+                <figure class="menu__item">
+                    <img class="menu__item-image" src="../assets/gallery/menu/d/14.png">
+                    <div class="menu__item-bottom">
+                        <figcaption class="menu__item-text">
+                            <p class="menu__item-title">Кокосовый крем-карамель с сливами и манго</p>
+                            <p class="menu__item-price">450₽</p>
+                        </figcaption>
+                        <button type="button" class="menu__item-button" data-details="Нежный кокосовый крем-карамель, дополненный сочными сливами и ароматным манго, завершается карамелизованным кокосовым хрустом. Это блюдо - путешествие в тропический рай, где каждый вкус - настоящее наслаждение." data-kcal="380">Подробнее</button>
+                    </div>
+                </figure>
+                <figure class="menu__item">
+                    <img class="menu__item-image" src="../assets/gallery/menu/d/33.png">
+                    <div class="menu__item-bottom">
+                        <figcaption class="menu__item-text">
+                            <p class="menu__item-title">Жареное мороженое с мусом из свежих ягод</p>
+                            <p class="menu__item-price">400₽</p>
+                        </figcaption>
+                        <button type="button" class="menu__item-button" data-details="Насладитесь уникальным десертом - жареным мороженым с мусом из свежих ягод, который мы создали для настоящих гурманов. Каждый кусочек хрустящей оболочки мороженого, сливается с ароматным мусом из отборных ягод, придают этому блюду невероятный вкусовой аккорд." data-kcal="380">Подробнее</button>
+                    </div>
+                </figure>
+                <figure class="menu__item">
+                    <img class="menu__item-image" src="../assets/gallery/menu/d/34.png">
+                    <div class="menu__item-bottom">
+                        <figcaption class="menu__item-text">
+                            <p class="menu__item-title">Медовая пахлава с грецкими орехами</p>
+                            <p class="menu__item-price">550₽</p>
+                        </figcaption>
+                        <button type="button" class="menu__item-button" data-details="Погрузитесь в восточные вкусы с нашей медовой пахлавой, усыпанной ароматными грецкими орехами. Каждый слой тонкого теста пропитан натуральным медом, а щедрая порция орехов добавляет этому десерту особый вкус и хрустящую текстуру." data-kcal="380">Подробнее</button>
+                    </div>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <div class="details" id="detailsWindow">
+        <div class="details__close" id="detailsClose"></div>
+        <h3 class="details__title" id="detailsTitle"></h3>
+        <div class="details__calories" id="detailsKcal"></div>
+        <div class="details__price" id="detailsPrice"></div>
+        <div class="details__info" id="detailsInfo"></div>
+    </div>
+
+    <footer class="footer">
+        <span class="footer__logo">эклетика</span>
+        <div class="footer__social">
+            <p class="footer__social-text">
+                Следите за нами в соцсетях
+            </p>
+            <div class="footer__social-network">
+                <a class="footer__social-anchor" href="javascript:void(0)"><img src="../assets/svg/tg.svg" alt="Телеграмм"></a>
+                <a class="footer__social-anchor" href="javascript:void(0)"><img src="../assets/svg/vk.svg" alt="Вконтакте"></a>
+                <a class="footer__social-anchor" href="javascript:void(0)"><img src="../assets/svg/dzen.svg" alt="Яндекс дзен"></a>
+                <a class="footer__social-anchor" href="javascript:void(0)"><img src="../assets/svg/youtube.svg" alt="Ютуб"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

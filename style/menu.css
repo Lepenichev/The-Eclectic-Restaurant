@@ -1,0 +1,247 @@
+.menu {
+    padding: 0 16.8vw;
+    margin-bottom: 258px;
+}
+
+.menu__booking {
+    position: relative;
+    width: 300px;
+    height: 92px;
+    position: fixed;
+    font-size: clamp(12px, 2vw, 24px);
+    font-weight: bold;
+    line-height: normal;
+    transform: translateY(-20px);
+    right: 0;
+    background: var(--button);
+    border-radius: 10px 0 0 10px;
+    transition: background 0.2s ease-in-out;
+}
+
+.menu__booking::before {
+    position: absolute;
+    content: 'онлайн-бронирование';
+    text-transform: uppercase;
+    max-width: 172px;
+    top: 15px;
+    left: 33px;
+}
+
+.menu__booking:hover {
+    background: var(--button-active);
+}
+
+.menu__booking, .menu__anchor {
+    color: white;
+}
+
+.menu__navigation {
+    margin: 102px 0;
+}
+
+.menu__anchor {
+    font-size: clamp(16px, 1.5vw, 20px);
+    font-weight: bold;
+    background: transparent;
+    padding: 10px 32px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.menu__anchor:not(:last-child) {
+    margin-right: 20px;
+}
+
+.menu__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 65px;
+}
+
+.menu__item {
+    width: 30.7vw;
+    background: white;
+}
+
+.menu__item-image {
+    width: 100%;
+    height: 24.1vw;
+    object-fit: cover;
+    margin-bottom: 26px;
+}
+
+.menu__item-bottom {
+    padding-bottom: 28px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.menu__item-text {
+    margin-bottom: 51px;
+    padding: 0 1.6vw;
+}
+
+.menu__item-title {
+    font-size: clamp(14px, 1.5vw, 24px);
+    font-weight: bold;
+    min-height: 52px;
+    width: 15.5vw;
+}
+
+.menu__item-price {
+    font-size: clamp(14px, 1.8vw, 28px);
+    font-weight: bold;
+    float: right;
+}
+
+.menu__item-title, .menu__item-price {
+    display: inline-block;
+}
+
+.menu__item-button {
+    font-size: clamp(14px, 1.8vw, 28px);
+    font-weight: bold;
+    padding: 1.1vw 0;
+    text-align: center;
+    background: var(--button);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.menu__item-button:hover {
+    background: var(--button-active);
+    transition: background 0.2s ease-in-out;
+}
+
+@media(max-width: 1300px) {
+    .menu__booking {
+        width: 230px;
+    }
+}
+
+@media(max-width: 940px) {
+    .menu__booking {
+        height: 80px;
+        width: 170px;
+    }
+
+    .menu__booking::before {
+        left: 15px;
+    }
+
+    .menu__navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .menu__items {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .menu__item {
+        width: 100%;
+    }
+
+    .menu__item-image {
+        margin-bottom: 12px;
+        height: 63vw;
+    }
+
+    .menu__item-text {
+        margin-bottom: 22px;
+    }
+
+    .menu__item-title {
+        width: 35vw;
+    }
+
+    .menu__item-bottom {
+        padding-bottom: 17px;
+    }
+}
+
+@media(max-width: 720px) {
+    .menu {
+        padding: 0 8.3vw;
+        margin-bottom: 30px;
+    }
+
+    .menu__booking {
+        height: 70px;
+        width: 140px;
+    }
+
+    .menu__navigation{
+        margin: 30px 0;
+    }
+
+    .menu__item-bottom {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+}
+
+@media(max-width: 500px) {
+    .menu__booking  {
+        width: 83px;
+        height: 83px;
+        border-radius: 50%;
+        transform: translateY(20px);
+        right: 10px;
+    }
+
+    .menu__booking::before {
+        content: 'онлайн-бронь';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/*details*/
+
+.details {
+    display: none;
+    background-color: white;
+    padding: 30px;
+    position: fixed;
+    top: 200px;
+    margin: 0 35vw;
+    border: 3px solid darkgray;
+}
+
+.details__close {
+    font-size: 2.5em;
+    text-align: right;
+}
+
+.details__title {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.details__calories {
+    color: gray;
+    margin: 10px 0;
+}
+
+.details__price {
+    font-size: 1.7em;
+    margin: 20px 0;
+    font-weight: bolder;
+}
+
+.details__price::after {
+    content: " ₽";
+    font-size: 0.9em;
+}
+
+.details__info {
+
+}
