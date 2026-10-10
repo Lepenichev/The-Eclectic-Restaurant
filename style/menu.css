@@ -48,6 +48,11 @@
     border-radius: 10px;
 }
 
+.menu__anchor--disabled {
+    background: white;
+    color: black;
+}
+
 .menu__anchor:not(:last-child) {
     margin-right: 20px;
 }
@@ -90,9 +95,14 @@
 }
 
 .menu__item-price {
+    position: relative;
     font-size: clamp(14px, 1.8vw, 28px);
     font-weight: bold;
     float: right;
+}
+
+.menu__item-price::after {
+ content: '₽';
 }
 
 .menu__item-title, .menu__item-price {

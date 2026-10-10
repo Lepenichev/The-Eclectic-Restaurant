@@ -48,6 +48,9 @@ header {
 }
 
 .btn-big {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 420px;
     height: 80px;
     background: var(--button);

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../style/fonts.css">
     <link rel="stylesheet" href="../style/home.css">
     <link rel="stylesheet" href="../style/contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -76,7 +77,7 @@
                     <input class="booking__input" type="email" placeholder="Почта" name="email">
                     <fieldset class="booking__form-item">
                         <button class="booking__button-quantity booking__button-quantity--minuses" type="button">-</button>
-                        <input class="booking__form-data" type="text" value="1" disabled>
+                        <input class="booking__form-data" name="num_guests" type="text" value="1" readonly>
                         <button class="booking__button-quantity booking__button-quantity--plus" type="button">+</button>
                         Количество гостей
                     </fieldset>
@@ -90,7 +91,9 @@
         </article>
 
         <article class="contacts contacts--reverse">
-            <img class="contacts__image" src="../assets/gallery/contact/map.png" alt="Повара на кухне">
+            <a class="contacts__wrapper-img" href="https://yandex.ru/maps/org/eklektika/215111219733/?ll=30.375579%2C59.979897&z=14.13">
+                <img class="contacts__image contacts__image--reverse" src="../assets/gallery/contact/map.png" alt="Карта">
+            </a>
             <div class="contacts__right contacts__right--revers">
                 <div class="contacts__content contacts__content--reverse">
                     <h2 class="contacts__header">Мы ценим, что вы выбрали наш ресторан и обещаем сделать ваш визит незабываемым!</h2>

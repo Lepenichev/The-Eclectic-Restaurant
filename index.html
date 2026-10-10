@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style/common.css">
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -38,7 +39,7 @@
         
         <section class="intro">
             <h1 class="intro__header">Ресторан <span>«Эклектика»</span></h1>
-            <button class="intro__button btn-big">Забронировать онлайн</button>
+            <a href="contact/index.html" class="intro__button btn-big">Забронировать онлайн</a>
             <button class="intro__button-stock btn-big">Акция</button>
         </section>
     </header>
@@ -135,6 +136,57 @@
                             </p>
                         </figcaption>
                     </figure>
+                                        <figure class="reviews__item">
+                        <img class="reviews__image" 
+                             src="assets/reviews/reviewIgor.png" 
+                             alt="Фотография довольного посетителя">
+                        <figcaption class="reviews__content">
+                            <div class="reviews__content-up">
+                                <h3 class="reviews__user-name">Игорь Ковалев</h3>
+                                <div class="reviews__stars">
+                                    <img class="reviews__gray-star" src="assets/svg/gray-stars.svg" alt="Серые звезды">
+                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
+                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
+                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
+                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
+                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
+                                </div>
+                            </div>
+                            <p class="reviews__text">
+                                Провели здесь день рождения — атмосфера просто 
+                                великолепная. Персонал веселый и отзывчивый, кухня 
+                                порадовала. Особенно понравились закуски к пиву! 
+                                Обязательно будем возвращаться, чтобы попробовать 
+                                все блюда из меню.
+                            </p>
+                        </figcaption>
+                    </figure>
+                                        <figure class="reviews__item">
+                        <img class="reviews__image" 
+                             src="assets/reviews/reviewMarina.png" 
+                             alt="Фотография довольного посетителя">
+                        <figcaption class="reviews__content">
+                            <div class="reviews__content-up">
+                                <h3 class="reviews__user-name">Марина Соколова</h3>
+                                <div class="reviews__stars">
+                                    <img class="reviews__gray-star" src="assets/svg/gray-stars.svg" alt="Серые звезды">
+                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
+                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
+                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
+                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
+                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
+                                </div>
+                            </div>
+                            <p class="reviews__text">
+                                Посетили семейный ресторан с подругами на девичнике, 
+                                и это был наш лучший выбор! У нас был волшебный 
+                                вечер — вкусная еда, отличные коктейли и веселая 
+                                атмосфера. Обязательно вернемся сюда с мужьями! 
+                                Очень рекомендую для дружеских посиделок и 
+                                праздников.
+                            </p>
+                        </figcaption>
+                    </figure>
                 </div>
                 <button class="reviews__button reviews__button--prev">
                     <img src="assets/svg/big-left-arrow.svg" alt="Стрелка влево">
@@ -160,7 +212,7 @@
                         <a class="contacts__anchor" href="tel:+79110000080">+7 (911) 000-00-80</a>
                     </p>
                 </div>
-                <button class="contacts__button btn-big">Забронировать онлайн</button>
+                <a href="contact/index.html" class="contacts__button btn-big">Забронировать онлайн</a>
             </div>
         </article>
     </main>
