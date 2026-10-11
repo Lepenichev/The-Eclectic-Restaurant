@@ -226,7 +226,12 @@
     border: 3px solid darkgray;
 }
 
+.details.details-open {
+    display:block
+}
+
 .details__close {
+    cursor: pointer;
     font-size: 2.5em;
     text-align: right;
 }

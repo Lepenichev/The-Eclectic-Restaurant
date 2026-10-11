@@ -1,0 +1,29 @@
+function init() {
+    const gallery = document.getElementById('gallery');
+    const buttons = document.querySelectorAll('.gallery__button');
+    buttons.forEach(btn => {
+        btn.addEventListener('click', (event) => {
+            if(gallery.classList.contains('about')) {
+                gallery.classList.replace('about', 'values')
+            } else {
+                gallery.classList.replace('values', 'about')
+            }
+        });
+    });
+
+    const revievsContainer = document.getElementById('reviewsItems')
+    const btnPrev = document.querySelector('.reviews__button--prev');
+    const btnNext = document.querySelector('.reviews__button--next');
+    const card = document.querySelector('.reviews__item')
+    const widthCard = card.offsetWidth
+
+    btnPrev.addEventListener('click', (event) => {
+        revievsContainer.scrollLeft -= widthCard + 35;
+    });
+
+    btnNext.addEventListener('click', (event) => {
+        revievsContainer.scrollLeft += widthCard + 35;
+    });
+}
+
+init();

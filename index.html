@@ -45,26 +45,17 @@
     </header>
 
     <main>
-        <section class="gallery">
+        <section class="gallery about" id="gallery">
             <div class="gallery__items">
                 <figure class="gallery__item">
-                    <img class="gallery__image" src="assets/gallery/gallery_about.png" alt="Зал ресторана">
+                    <div class="gallery__image"></div>
                     <figcaption class="gallery__text">
-                        <h2 class="gallery__header">О нас</h2>
-                        <p class="gallery__paragraph">Ресторан «Эклектика» — это место, где сочетаются утонченный 
-                            вкус и теплая атмосфера. Наши шеф-повара тщательно 
-                            подбирают ингредиенты и создают блюда с любовью 
-                            к каждому клиенту. 
+                        <h2 class="gallery__header"></h2>
+                        <p class="gallery__paragraph gallery__paragraph-top">
                         </p>
-                        <p class="gallery__paragraph">
-                            «Эклектика» предлагает уютные залы для семейных ужинов, 
-                            романтических свиданий и деловых обедов. Мы ценим ваше 
-                            время и комфорт, поэтому обеспечиваем высокий уровень 
-                            сервиса.
+                        <p class="gallery__paragraph gallery__paragraph-center">
                         </p>
-                        <p class="gallery__paragraph">
-                            Добро пожаловать в мир великолепных вкусов 
-                            и неповторимых воспоминаний.
+                        <p class="gallery__paragraph gallery__paragraph-bottom">
                         </p>
                     </figcaption>
                 </figure>
@@ -82,7 +73,7 @@
         <section class="reviews">
             <div class="reviews__container">
                 <h2 class="reviews__header">Отзывы</h2>
-                <div class="reviews__items">
+                <div class="reviews__items" id="reviewsItems">
                     <figure class="reviews__item">
                         <img class="reviews__image" 
                              src="assets/reviews/reviewNatalya.png" 
@@ -136,7 +127,7 @@
                             </p>
                         </figcaption>
                     </figure>
-                                        <figure class="reviews__item">
+                        <figure class="reviews__item">
                         <img class="reviews__image" 
                              src="assets/reviews/reviewIgor.png" 
                              alt="Фотография довольного посетителя">
@@ -231,5 +222,7 @@
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
+    <script src="event.js"></script>
 </body>
 </html>

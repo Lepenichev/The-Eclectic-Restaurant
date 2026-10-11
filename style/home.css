@@ -162,7 +162,7 @@
 }
 
 .gallery__image {
-    object-fit: cover;
+    position: relative;
     width: 49vw;
     height: 100%;
 }
@@ -172,6 +172,7 @@
 }
 
 .gallery__header {
+    position: relative;
     margin-bottom: 30px;
 }
 
@@ -186,6 +187,59 @@
     justify-content: space-between;
     right: 36.6vw;
     bottom: 6.14vw;
+}
+
+.gallery__paragraph {
+    position: relative;
+}
+
+.about .gallery__image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url(/assets/gallery/gallery_about.png);
+    background-size: cover;
+}
+
+.about .gallery__header::after {
+    content: 'О нас';
+}
+
+.about .gallery__paragraph-top::after {
+    content: 'Ресторан «Эклектика» — это место, где сочетаются утонченный вкус и теплая атмосфера. Наши шеф-повара тщательно подбирают ингредиенты и создают блюда с любовью к каждому клиенту.';
+}
+
+.about .gallery__paragraph-center::after {
+    content: '«Эклектика» предлагает уютные залы для семейных ужинов, романтических свиданий и деловых обедов. Мы ценим ваше время и комфорт, поэтому обеспечиваем высокий уровень сервиса.';
+}
+
+.about .gallery__paragraph-bottom::after {
+    content: 'Добро пожаловать в мир великолепных вкусов и неповторимых воспоминаний.';
+}
+
+.values .gallery__image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url(/assets/gallery/gallery_values.png);
+    background-size: cover;
+}
+
+.values .gallery__header::after {
+    content: 'Наши ценности';
+}
+
+.values .gallery__paragraph-top::after {
+    content: '«Эклектика» — это уютное место, где каждый гость становится частью нашей семьи. Мы гордимся тем, что создали атмосферу, в которой сочетается элегантность и теплота, а меню предлагает богатство вкусов, подчеркивая лучшие кулинарные традиции мира.';
+}
+
+.values .gallery__paragraph-center {
+    display: none;
+}
+    
+
+.values .gallery__paragraph-bottom::after {
+    content: 'Ресторан «Эклектика» — это не просто еще одно место для обеда. Это место, где сливаются воедино стиль, вкус и теплота, создавая неповторимый опыт для тех, кто ценит настоящую гастрономию.';
 }
 
 .gallery__button {
@@ -338,8 +392,18 @@
     left: 5%;
 }
 
+.reviews__button--prev.inactive {
+    opacity: 0;
+    cursor: default;
+}
+
 .reviews__button--next {
     right: 5%;
+}
+
+.reviews__button--next.inactive {
+    opacity: 0;
+    cursor: default;
 }
 
 @media(max-width: 1250px) {
