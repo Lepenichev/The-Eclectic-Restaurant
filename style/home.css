@@ -197,7 +197,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: url(/assets/gallery/gallery_about.png);
+    background: url(../assets/gallery/gallery_about.png);
     background-size: cover;
 }
 
@@ -221,7 +221,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: url(/assets/gallery/gallery_values.png);
+    background: url(../assets/gallery/gallery_values.png);
     background-size: cover;
 }
 
