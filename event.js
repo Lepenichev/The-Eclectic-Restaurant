@@ -2,8 +2,8 @@ function init() {
     const container = document.getElementById('reviewsItems');
     const nextBtn = document.querySelector('.reviews__button--next')
     const prevBtn = document.querySelector('.reviews__button--prev')
-    const firstReview = container.firstChild.nextSibling;
-    const lastReview = container.lastChild.previousSibling;
+    const firstReview = container.firstChild.nextElementSibling;
+    const lastReview = container.lastChild.previousElementSibling;
 
     const options = {
         root: container,

@@ -44,6 +44,24 @@
         </section>
     </header>
 
+    <template id="reviweTemplate">
+        <figure class="reviews__item">
+            <img class="reviews__image" 
+                    src="" 
+                    alt="Фотография довольного посетителя">
+            <figcaption class="reviews__content">
+                <div class="reviews__content-up">
+                    <h3 class="reviews__user-name"></h3>
+                    <div class="reviews__stars">
+                        <img class="reviews__gray-star" src="assets/svg/gray-stars.svg" alt="Серые звезды">
+                    </div>
+                </div>
+                <p class="reviews__text">
+                </p>
+            </figcaption>
+        </figure>
+    </template>
+
     <main>
         <section class="gallery about" id="gallery">
             <div class="gallery__items">
@@ -72,112 +90,8 @@
 
         <section class="reviews">
             <div class="reviews__container">
-                <h2 class="reviews__header">Отзывы</h2>
+                <h2 class="reviews__header">Отзывы</h2>     
                 <div class="reviews__items" id="reviewsItems">
-                    <figure class="reviews__item">
-                        <img class="reviews__image" 
-                             src="assets/reviews/reviewNatalya.png" 
-                             alt="Фотография довольного посетителя">
-                        <figcaption class="reviews__content">
-                            <div class="reviews__content-up">  
-                                <h3 class="reviews__user-name">Наталья Иванова</h3>
-                                <div class="reviews__stars">
-                                    <img class="reviews__gray-star" src="assets/svg/gray-stars.svg" alt="Серые звезды">
-                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
-                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
-                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
-                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
-                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
-                                </div>
-                            </div>
-                            <p class="reviews__text">
-                                Посетили семейный ресторан вместе с мужем и детьми — 
-                                отличное место для семейного ужина! Обстановка очень 
-                                уютная, а обслуживание выше всяких похвал. Наши дети 
-                                в восторге от детского меню, которое оказалось не только 
-                                вкусным, но и заботливо подготовленным с учетом 
-                                детских предпочтений. Будем рекомендовать всем 
-                                друзьям и обязательно вернемся.
-                            </p>
-                        </figcaption>
-                    </figure>
-                    <figure class="reviews__item">
-                        <img class="reviews__image" 
-                             src="assets/reviews/reviewAleksandr.png" 
-                             alt="Фотография довольного посетителя">
-                        <figcaption class="reviews__content">
-                            <div class="reviews__content-up">
-                                <h3 class="reviews__user-name">Александр Петров</h3>
-                                <div class="reviews__stars">
-                                    <img class="reviews__gray-star" src="assets/svg/gray-stars.svg" alt="Серые звезды">
-                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
-                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
-                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
-                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
-                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
-                                </div>
-                            </div>
-                            <p class="reviews__text">
-                                Этот ресторан — настоящая находка! Проводил здесь 
-                                деловой ужин с партнерами, и все остались в восторге. 
-                                Обслуживание на высшем уровне, персонал внимателен 
-                                к каждой детали. Кухня порадовала своим 
-                                разнообразием. Отличное место для деловых встреч и 
-                                ужинов в уютной обстановке. Рекомендую!
-                            </p>
-                        </figcaption>
-                    </figure>
-                        <figure class="reviews__item">
-                        <img class="reviews__image" 
-                             src="assets/reviews/reviewIgor.png" 
-                             alt="Фотография довольного посетителя">
-                        <figcaption class="reviews__content">
-                            <div class="reviews__content-up">
-                                <h3 class="reviews__user-name">Игорь Ковалев</h3>
-                                <div class="reviews__stars">
-                                    <img class="reviews__gray-star" src="assets/svg/gray-stars.svg" alt="Серые звезды">
-                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
-                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
-                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
-                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
-                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
-                                </div>
-                            </div>
-                            <p class="reviews__text">
-                                Провели здесь день рождения — атмосфера просто 
-                                великолепная. Персонал веселый и отзывчивый, кухня 
-                                порадовала. Особенно понравились закуски к пиву! 
-                                Обязательно будем возвращаться, чтобы попробовать 
-                                все блюда из меню.
-                            </p>
-                        </figcaption>
-                    </figure>
-                                        <figure class="reviews__item">
-                        <img class="reviews__image" 
-                             src="assets/reviews/reviewMarina.png" 
-                             alt="Фотография довольного посетителя">
-                        <figcaption class="reviews__content">
-                            <div class="reviews__content-up">
-                                <h3 class="reviews__user-name">Марина Соколова</h3>
-                                <div class="reviews__stars">
-                                    <img class="reviews__gray-star" src="assets/svg/gray-stars.svg" alt="Серые звезды">
-                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
-                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
-                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
-                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
-                                    <img class="reviews__star" src="assets/svg/star.svg" alt="Звезда">
-                                </div>
-                            </div>
-                            <p class="reviews__text">
-                                Посетили семейный ресторан с подругами на девичнике, 
-                                и это был наш лучший выбор! У нас был волшебный 
-                                вечер — вкусная еда, отличные коктейли и веселая 
-                                атмосфера. Обязательно вернемся сюда с мужьями! 
-                                Очень рекомендую для дружеских посиделок и 
-                                праздников.
-                            </p>
-                        </figcaption>
-                    </figure>
                 </div>
                 <button class="reviews__button reviews__button--prev">
                     <img src="assets/svg/big-left-arrow.svg" alt="Стрелка влево">
@@ -222,6 +136,7 @@
             </div>
         </div>
     </footer>
+    <script src="reviews.js"></script>
     <script src="index.js"></script>
     <script src="event.js"></script>
 </body>
