@@ -138,7 +138,7 @@
     font-family: var(--pts);
     color: inherit;
     border: none;
-    font-size: 18px;
+    font-size: 13px;
     line-height: 96%;
     font-weight: 400;
 }
@@ -148,7 +148,13 @@
 }
 
 .booking__form-data:not(:last-child) {
-    width: 10px;
+    width: 12px;
+}
+
+@media(max-width: 1601px) {
+    .booking__form-data[name="date"] {
+        margin-bottom: 61px;
+    }
 }
 
 @media(max-width: 970px) {
@@ -158,10 +164,6 @@
 
     .booking__form-item:not(:last-of-type) {
         margin-bottom: 35px;
-    }
-
-    .booking__form-data[name="date"] {
-        margin-bottom: 61px;
     }
 
     .booking__input {

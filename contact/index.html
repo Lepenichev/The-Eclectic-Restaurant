@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="../style/home.css">
     <link rel="stylesheet" href="../style/contact.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../style/jquery.datetimepicker.min.css">
+    <script src="../jquery.datetimepicker.full.min.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <header>
@@ -76,13 +79,13 @@
                     <input class="booking__input" type="tel" placeholder="Телефон" name="phone">
                     <input class="booking__input" type="email" placeholder="Почта" name="email">
                     <fieldset class="booking__form-item">
-                        <button class="booking__button-quantity booking__button-quantity--minuses" type="button">-</button>
-                        <input class="booking__form-data" name="num_guests" type="text" value="1" readonly>
-                        <button class="booking__button-quantity booking__button-quantity--plus" type="button">+</button>
+                        <button class="booking__button-quantity booking__button-quantity--minuses" id="numMinus" type="button">-</button>
+                        <input class="booking__form-data" id="numGuests" name="num_guests" type="text" value="1" readonly>
+                        <button class="booking__button-quantity booking__button-quantity--plus" id="numPlus" type="button">+</button>
                         Количество гостей
                     </fieldset>
                     <fieldset class="booking__form-item">
-                        <input class="booking__form-data" type="text" placeholder="Дата и время" name="date">
+                        <input class="booking__form-data" id="dateTime" type="text" placeholder="Дата и время" name="date">
                     </fieldset>
                     <input class="booking__input" type="text" placeholder="Пожелания" name="comments">
                     <button class="booking__button btn-big" type="submit"> Забронировать</button>
