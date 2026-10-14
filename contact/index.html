@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="../style/home.css">
     <link rel="stylesheet" href="../style/contact.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="../style/jquery.datetimepicker.min.css">
-    <script src="../jquery.datetimepicker.full.min.js"></script>
+    <!-- <link rel="stylesheet" href="../style/jquery.datetimepicker.min.css">
+    <script src="../jquery.datetimepicker.full.min.js"></script> -->
     <script src="index.js"></script>
 </head>
 <body>
@@ -43,10 +43,14 @@
     </header>
 
     <main>
-        <section class="calendar">
+        <section class="calendar" id="calendar">
             <div class="calendar__close">❮</div>
             <h2 class="calendar__header">Бронирование</h2>
-            <div class="calendar__month"></div>
+            <div class="calendar__month">
+                <!-- <button class="selected">Январь</button>
+                <button>Февраль</button>
+                <button>Март</button> -->
+            </div>
             <table class="calendar__day">
                 <thead  class="calendar__top">
                     <tr>
@@ -59,10 +63,26 @@
                         <th class="calendar__cell">Вс</th>
                     </tr>
                 </thead>
-                <tbody class="calendar__body"></tbody>
+                <tbody class="calendar__body">
+                    <!-- <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                    <tr><td>8</td><td>9</td><td>10</td><td><div class="disabled">11</div></td><td>12</td><td>13</td><td><div class="selected">14</div></td></tr>
+                    <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>5</td><td>6</td><td>7</td></tr>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr> -->
+                </tbody>
             </table>
             <h3 class="calendar__subheader">Выберите время</h3>
-            <div class="calendar__time"></div>
+            <div class="calendar__time">
+                <button>15:00</button>
+                <button>15:30</button>
+                <button>16:00</button>
+                <button>16:30</button>
+                <button class="occupied">17:00</button>
+                <button>17:30</button>
+                <button class="selected">18:00</button>
+                <button>18:30</button>
+                <button>19:00</button>
+            </div>
         </section>
 
         <article class="booking">

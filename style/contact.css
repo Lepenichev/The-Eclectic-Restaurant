@@ -1,6 +1,6 @@
 /*calendar*/
 .calendar {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 120px;
     right: 35vw;
