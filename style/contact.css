@@ -1,6 +1,6 @@
 /*calendar*/
 .calendar {
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 120px;
     right: 35vw;
@@ -8,6 +8,10 @@
     background: white;
     border: 1px solid darkgray;
     padding: 10px 5px 20px 5px;
+}
+
+.calendar.open {
+    display: block;
 }
 
 .calendar__close {
