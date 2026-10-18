@@ -1,9 +1,11 @@
 /*calendar*/
 .calendar {
+    z-index: 999;
     display: none;
     position: absolute;
     top: 120px;
-    right: 35vw;
+    left: 50%;
+    transform: translateX(-50%);
     width: 30vw;
     background: white;
     border: 1px solid darkgray;
@@ -15,6 +17,7 @@
 }
 
 .calendar__close {
+    cursor: pointer;
     margin: 5px;
     font-size: 1.3em;
 }
@@ -83,6 +86,33 @@
     border-radius: calc(0.55em + 1px);
     background: #222B45;
     color: white;
+}
+
+@media(max-width: 1060px) {
+    .calendar {
+        width: 50vw;
+    }
+}
+
+@media(max-width: 900px) {
+    .calendar {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media(max-width: 630px) {
+    .calendar {
+        width: 90vw;
+    }
+}
+
+@media(max-width: 370px) {
+    .calendar__month button {
+        font-size: 0.9em;
+    }
 }
 
 /*booking*/
