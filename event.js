@@ -23,13 +23,39 @@ function init() {
     }
     }
 
-    
-
     const rightObserver = new IntersectionObserver(callbackCreator(nextBtn), options);
-    rightObserver.observe(lastReview)
+    rightObserver.observe(lastReview);
 
     const leftObserver = new IntersectionObserver(callbackCreator(prevBtn), options);
-    leftObserver.observe(firstReview)
+    leftObserver.observe(firstReview);
+
+    const buttonObserverOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: [0, 1],
+    };
+    const openPopUp = document.getElementById('openPopUp');
+    let buttonIsShown = {};
+
+    const observerButtons = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+            let btn = entry.target
+            buttonIsShown[btn.dataset.observeid] = entry.isIntersecting
+        });
+        if (Object.values(buttonIsShown).some(btn => btn == true)) {
+            openPopUp.classList.add('hiden');
+        } else {
+            openPopUp.classList.remove('hiden');
+        }
+    },
+    buttonObserverOptions
+    );
+
+    const buttons = document.querySelectorAll('.btn-big');
+    buttons.forEach((btn, btnIndex) => {
+        btn.dataset.observeid = btnIndex;
+        observerButtons.observe(btn);
+    })
 }
 
 init();
